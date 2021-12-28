@@ -44,6 +44,9 @@ public class Student extends Person{
     public void setChemical(int chemical) {
         this.chemical = chemical;
     }
+    public int averagePoint() {
+        return (mathPoint + physicalPoint + chemical)/3;
+    }
 
     @Override
     public String toString() {
